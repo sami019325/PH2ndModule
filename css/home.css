@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.color-Yellow {
+    /* --color-Yellow: rgb(223, 179, 35) ; */
+    color: rgb(255, 166, 0);
+}
+
+.main-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, orangered, rgb(243, 148, 4));
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.header-section {
+    padding: 50px 20px;
+    width: 50%;
+}
+
+.imgOfService {
+    width: 20%;
+    height: 100px;
+    align-items: center;
+}
+
+.imgOfService img {
+    width: 100%;
+    margin: auto 0;
+}
+
+.service-box2 {
+    width: 70%;
+    height: 200px;
+    text-align: justify;
+
+
+}
+
+.service-box2 h2 {
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.service-box2 p {
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+
+.service-box {
+    width: 30%;
+    height: 200px;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* i dont have much idea about this */
+    justify-content: space-evenly;
+    /* i dont have much idea about this */
+    margin: 10px;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    font-size: 30px;
+
+}
+
+#main {
+    width: 100%;
+    /* text-align: center;
+    justify-content: space-evenly; */
+}
+
+#service-box-contener {
+    width: 100%;
+    display: flex;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#titile-img {
+    width: 100%;
+    float: left;
+}

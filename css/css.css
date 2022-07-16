@@ -1,0 +1,7 @@
+:root {
+    --orange: orange !important;
+}
+
+h1 {
+    color: var(--orange)
+}
