@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bat ball</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .bat {
+            height: 400px;
+            margin-left: 200px;
+
+        }
+
+        .bat-field {
+            width: 96%;
+            height: 500px;
+            background-color: chartreuse;
+            padding: 2%;
+        }
+
+        .bat-field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform .5s ease-in;
+        }
+
+        .bat-field:hover .ball {
+            transform: translate(400px, -100px) rotate(180deg);
+            transition: transform .5s ease-out .5s;
+            /* transition: background-image .2s; */
+        }
+
+        .ball {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-image: linear-gradient(red, orange);
+            border-radius: 50px;
+            margin-left: 560px;
+            margin-top: -286px;
+            z-index: 2;
+        }
+
+        .bg-container {
+            width: 100%;
+            overflow-y: scroll;
+            overflow: hidden;
+        }
+
+        .bg {
+            position: relative;
+            width: 400%;
+
+            margin-left: 0;
+            height: 150px;
+            margin-bottom: 0;
+            z-index: 0;
+            animation: moveBg 60s alternate infinite;
+            animation-play-state: running;
+            /* transform: moveBg 10s infinite; */
+        }
+
+
+
+        @keyframes moveBg {
+            from {
+                margin-left: 0;
+            }
+
+            to {
+                margin-left: -100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-container"> <img class="bg" src="tech-lab-resources-master/images/bg-tree.png" alt="" srcset="">
+    </div>
+    <div class="bat-field">
+
+        <div>
+
+
+            <img class="bat" src="tech-lab-resources-master/images/bat.png" alt="" srcset="">
+            <div class="ball"></div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
